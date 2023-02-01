@@ -1,39 +1,25 @@
-#pragma once
-#include <Windows.h>
+#define OFFSET_UWORLD 0xec18148
 
-#define OFFSET_UWORLD 0xED541C8 //
+WorldToScreen: 0x9c89b60
+FName::ToString/GetNameById: 0x47a0050
+DecryptAnsi: 0x2a578ac
+FNamePool: 0xec39480
+GWorld: 0xec18148
+BoneArray: 0x5e8
+ComponentToWorld: 0x240
+PlayerController->LocalPlayerCachedLODDistanceFactor : 0x38c
+ULocalPlayer->ViewStates: 0xd0
+ULocalPlayer->ViewLocation: 0xa0
+GetCameraCachePOV: 0x8079230
+GetLastFrameCameraCachePOV: 0x80796ac
+SetLastFrameCameraCachePOV: 0x807f558
+SetCameraCachePOV: 0x807ef20
 
-namespace OFFSETS
+bool bIsVisible(uintptr_t Mesh)
 {
-    uintptr_t Gameinstance = 0x1B8;
-    uintptr_t LocalPlayers = 0x38;
-    uintptr_t PlayerController = 0x30;
-    uintptr_t LocalPawn = 0x330;
-    uintptr_t PlayerState = 0x2a8;
-    uintptr_t RootComponet = 0x190;
-    uintptr_t PersistentLevel = 0x30;
-    uintptr_t ActorCount = 0xA0;
-    uintptr_t AActor = 0x98;
-    uintptr_t CurrentActor = 0x8;
-    uintptr_t Mesh = 0x310;
-    uintptr_t Revivefromdbnotime = 0x43c0;
-    uintptr_t TeamId = 0x1100;
-    uintptr_t LocalActorPos = 0x128;
-    uintptr_t ComponetToWorld = 0x240;
-    uintptr_t BoneArray = 0x5D0;
-    uintptr_t Velocity = 0x170;
-    uintptr_t PawnPrivate = 0x300;
-    uintptr_t PlayerArray = 0x2a0;
-    uintptr_t ReviveFromDBNOTime = 0x43c0;
-}
-
-
-namespace W2S {
-    uintptr_t chain69 = 0xA8;
-    uintptr_t chain699 = 0x7E8;
-    uintptr_t chain = 0x70;
-    uintptr_t chain1 = 0x98;
-    uintptr_t chain2 = 0x140;
-    uintptr_t vDelta = 0x10;
-    uintptr_t zoom = 0x580;
+    float LastSumbitTime = read<float>(Mesh + 0x358);
+    float LastRenderTimeOnScreen = read<float>(Mesh + 0x360);
+ 
+    bool Visible = LastRenderTimeOnScreen + 0.06f >= LastSumbitTime;
+    return Visible;
 }
