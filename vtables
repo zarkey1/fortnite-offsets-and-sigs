@@ -1,0 +1,9 @@
+GetControlRotation : 0x720
+SetControlRotation : 0x728
+GetFOVAngle : 0x780 
+GetCameraLocation : 0x7C8
+GetCameraRotation : 0x7C0
+ClientSetCameraMode : 0x940
+GetPlayerViewPoint : 0x7B0
+
+++Fortnite+Release-23.30-CL-23986860-Windows [ Updated To The Latest Fortnite Update ]
