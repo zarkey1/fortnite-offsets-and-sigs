@@ -1,19 +1,14 @@
-#define OFFSET_UWORLD 0xec18148
+#define OFFSET_UWORLD 0xec17208
 
-WorldToScreen: 0x9c89b60
-FName::ToString/GetNameById: 0x47a0050
-DecryptAnsi: 0x2a578ac
-FNamePool: 0xec39480
-GWorld: 0xec18148
+FName::ToString/GetNameById: 0x479f2a0
+DecryptAnsi: 0x2a5bd40
+FNamePool: 0xec38540
+GWorld: 0xec17208
 BoneArray: 0x5e8
 ComponentToWorld: 0x240
 PlayerController->LocalPlayerCachedLODDistanceFactor : 0x38c
 ULocalPlayer->ViewStates: 0xd0
 ULocalPlayer->ViewLocation: 0xa0
-GetCameraCachePOV: 0x8079230
-GetLastFrameCameraCachePOV: 0x80796ac
-SetLastFrameCameraCachePOV: 0x807f558
-SetCameraCachePOV: 0x807ef20
 
 bool bIsVisible(uintptr_t Mesh)
 {
