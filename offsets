@@ -18,3 +18,39 @@ bool bIsVisible(uintptr_t Mesh)
     bool Visible = LastRenderTimeOnScreen + 0.06f >= LastSumbitTime;
     return Visible;
 }
+
+
+#define MESH_BONE_ARRAY 0x5e8 //  BoneArray ( Current - 0x5e8 )
+#define MESH_COMPONENT_TO_WORLD 0x328 // MeshComponent ( Current - 0x328 )
+#define DGOffset_OGI 0x1b8 // OwningGameInstance ( Current - 0x1b8 )
+#define DGOffset_LocalPlayers 0x38 // Doesnt Change
+#define DGOffset_PlayerController 0x30 // Doesnt Change
+#define DGOffset_MyHUD 0x338 // MyHUD ( Current - 0x338 )
+#define DGOffset_Canvas 0x2d8 // AHUD->Canvas ( Current - 0x2d8 )
+#define DGOffset_Font 0x90 // Doesnt Change
+#define DGOffset_Levels 0x170 // UWorld->Levels ( Current - 0x170 )
+#define DGOffset_Actors 0x98 // Doesnt Change
+#define DGOffset_RootComponent 0x190 // RootComponent
+#define DGOffset_ComponentLocation 0x128 // RelativeLocation ( Current - 0x128 )
+#define DGOffset_Pawn 0x330 // AcknowledgedPawn ( Current - 0x330 )
+#define DGOffset_Mesh 0x310 // Mesh ( Current - 0x310 )
+#define DGOffset_PlayerState 0x2a8 // APawn->PlayerState ( Current - 0x2a8 )
+#define DGOffset_WeaponData 0x3f0 // AFortWeapon->WeaponData ( Current - 0x3f0 )
+#define DGOffset_Weapon 0x640 // Unknown...
+#define DGOffset_DisplayName 0x90 // UFortItemDefinition->DisplayName ( Current - 0x90 )
+#define DGOffset_ViewportClient 0x78 // ULocalPlayer->ViewportClient ( Current - 0x78 )
+#define DGOffset_ItemDefinition 0x18 // Doesnt Change
+#define DGOffset_PrimaryPickupItemEntry 0x328 // (Current - 0x328 )
+#define DGOffset_Tier 0x73 // UFortItemDefinition->Tier ( Current - 0x73 )
+#define DGOffset_BlockingHit 0x0 // Doesnt Exist
+#define DGOffset_PlayerCameraManager 0x340 // APlayerController->PlayerCameraManager ( Current - 0x340 )
+#define DGOffset_TeamIndex 0x1100 // AFortPlayerStateAthena->TeamIndex ( Current - 0x1100
+#define DGOffset_ComponentVelocity 0x170 // ( Current - 0x170 )
+#define DGOffset_MovementComponent 0x318 // ( Current - 0x318 )
+#define DGOffset_Acceleration 0x298 // UCharacterMovementComponent->Acceleration ( Current - 0x298 )
+#define DGOffset_GravityScale 0x168 // UCharacterMovementComponent->GravityScale ( Current - 0x168 )
+#define DGOffset_Searched 0xe50 // ABuildingContainer->SearchedMesh ( Current - 0xe0 )
+#define DGOffset_bHit 0x2b8 // ABuildingWeakSpot->bHit ( Current - 0x2b8 )
+#define DGOffset_GObjects 0xea52f68 // GObject ( GObject Offset )
+#define DGOffset_GetNameById 0x479f2a0 // FName::ToString ( GetNameByIndex Offset )
+#define DGOffset_GWorld 0xec17208 // GWorld ( UWorld Offset )
