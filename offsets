@@ -1,9 +1,9 @@
-#define OFFSET_UWORLD 0xec17208
+#define OFFSET_UWORLD 0xee3ba38
 
-FName::ToString/GetNameById: 0x479f2a0
-DecryptAnsi: 0x2a5bd40
-FNamePool: 0xec38540
-GWorld: 0xec17208
+FName::ToString/GetNameById: 0x476d7f8
+DecryptAnsi: 0x2a12938
+FNamePool: 0xee5e0c0
+GWorld: 0xee3ba38
 BoneArray: 0x5e8
 ComponentToWorld: 0x240
 PlayerController->LocalPlayerCachedLODDistanceFactor : 0x38c
@@ -52,5 +52,5 @@ bool bIsVisible(uintptr_t Mesh)
 #define DGOffset_Searched 0xe50 // ABuildingContainer->SearchedMesh ( Current - 0xe0 )
 #define DGOffset_bHit 0x2b8 // ABuildingWeakSpot->bHit ( Current - 0x2b8 )
 #define DGOffset_GObjects 0xea52f68 // GObject ( GObject Offset )
-#define DGOffset_GetNameById 0x479f2a0 // FName::ToString ( GetNameByIndex Offset )
-#define DGOffset_GWorld 0xec17208 // GWorld ( UWorld Offset )
+#define DGOffset_GetNameById 0x476d7f8 // FName::ToString ( GetNameByIndex Offset )
+#define DGOffset_GWorld 0xee3ba38 // GWorld ( UWorld Offset )
