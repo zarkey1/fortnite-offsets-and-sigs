@@ -5,6 +5,7 @@ DecryptAnsi: 0x2a12938
 FNamePool: 0xee5e0c0
 GWorld: 0xee3ba38
 BoneArray: 0x5e8
+BoneArrayCache : 0x5f8
 ComponentToWorld: 0x240
 PlayerController->LocalPlayerCachedLODDistanceFactor : 0x38c
 ULocalPlayer->ViewStates: 0xd0
